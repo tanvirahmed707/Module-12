@@ -17,7 +17,7 @@ class TripController extends Controller
 
     public function create()
     {
-        // Get the specific locations for the round-trip
+        
         $locations = Location::whereIn('name', ['Dhaka', 'Comilla', 'Chittagong', "Cox's Bazaar"])
             ->get();
 
